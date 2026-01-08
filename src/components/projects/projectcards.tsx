@@ -1,0 +1,66 @@
+
+"use client";
+import React from "react";
+import Link from "next/link";
+import { WobbleCard } from "../ui/wobble-card";
+
+export function WobbleCardDemo() {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-3/4">
+      <Link
+        href="https://pomodoro-yb8i.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="col-span-1 lg:col-span-2 group"
+      >
+          <WobbleCard
+            containerClassName="h-full min-h-[500px] lg:min-h-[300px] cursor-pointer bg-cover bg-center bg-no-repeat"
+            style={{ 
+              backgroundImage: "url('/pj1.jpg')",
+              
+            }}
+          >
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 rounded-2xl" />
+            <div className="relative max-w-xs p-4 rounded-lg opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+              <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                POMODORO TIMER
+              </h2>
+              <p className="mt-4 text-left text-base/6 text-neutral-200">
+                ChronoBerry - A cute pomodoro timer with lofi music
+              </p>
+            </div>
+          </WobbleCard>
+      </Link>
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] group">
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 rounded-2xl" />
+        <div className="relative max-w-80 p-4 rounded-lg opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            UI/UX DESIGN
+          </h2>
+          <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            {/* Add description here if needed */}
+          </p>
+        </div>
+      </WobbleCard>
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] group" style={{ 
+              backgroundImage: "url('/pj2.jpg')",
+            }}>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 rounded-2xl" />
+        <div className="relative max-w-sm p-4 rounded-lg opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            Education Consultancy
+          </h2>
+          <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            {/* Add description here if needed */}
+          </p>
+        </div>
+        <img
+          src="/linear.webp"
+          alt="linear demo image"
+          className="absolute inset-0 w-full h-full object-cover rounded-2xl z-0"
+          style={{ pointerEvents: 'none' }}
+        />
+      </WobbleCard>
+    </div>
+  );
+}

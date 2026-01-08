@@ -28,7 +28,7 @@ export default function AboutMe() {
                             <Button
                                 as="a"
                                 href="/KrishnnaDevkota_FrontendIntern_CV.pdf"
-                                download="KrishnnaDevkota_CV.pdf"
+                                download="KrishnnaDevkota_FrontendIntern_CV.pdf"
                                 borderRadius="1rem"
                                 className="w-full sm:w-auto"
                             >

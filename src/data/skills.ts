@@ -1,7 +1,7 @@
 export const skills = {
   frontend: {
     label: "Frontend",
-    image: "/frontend.png", // Place your image in public/skills/
+    image: "/frontend.png", 
     items: [
       "Next.js",
       "React",

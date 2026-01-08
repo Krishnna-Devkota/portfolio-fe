@@ -7,6 +7,7 @@ import { MacbookScrollDemo } from "../landingpages/macbook";
 import CodeBlockDemo from "../landingpages/code-block";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Button } from "../ui/moving-border";
+import Link from "next/link";
 
 export default function AboutMe() {
     return (
@@ -24,7 +25,13 @@ export default function AboutMe() {
                             <Button borderRadius="1rem" onClick={() => window.open('https://www.linkedin.com/in/krishnnadevkota/')} className="w-full sm:w-auto"> 
                                 <span>LinkedIn</span>
                             </Button>
-                            <Button borderRadius="1rem" className="w-full sm:w-auto">
+                            <Button
+                                as="a"
+                                href="/KrishnnaDevkota_FrontendIntern_CV.pdf"
+                                download="KrishnnaDevkota_CV.pdf"
+                                borderRadius="1rem"
+                                className="w-full sm:w-auto"
+                            >
                                 <span>Download CV</span>
                             </Button>
                         </section>

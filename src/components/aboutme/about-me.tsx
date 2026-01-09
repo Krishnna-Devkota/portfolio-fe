@@ -25,15 +25,19 @@ export default function AboutMe() {
                             <Button borderRadius="1rem" onClick={() => window.open('https://www.linkedin.com/in/krishnnadevkota/')} className="w-full sm:w-auto"> 
                                 <span>LinkedIn</span>
                             </Button>
-                            <Button
-                                as="a"
-                                href="/KrishnnaDevkota_FrontendIntern_CV.pdf"
-                                download="KrishnnaDevkota_FrontendIntern_CV.pdf"
-                                borderRadius="1rem"
+                            <a
+                                href="/CV.pdf"
+                                download="CV.pdf"
                                 className="w-full sm:w-auto"
                             >
-                                <span>Download CV</span>
-                            </Button>
+                                <Button
+                                    as="div"
+                                    borderRadius="1rem"
+                                    className="w-full sm:w-auto cursor-pointer"
+                                >
+                                    <span>Download CV</span>
+                                </Button>
+                            </a>
                         </section>
                     </div>
                 </BackgroundBeamsWithCollision>

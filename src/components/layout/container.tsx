@@ -10,7 +10,7 @@ export default function Container({ children, className }: ContainerProps) {
   return (
     <div
       className={clsx(
-        "mx-auto w-full px-4 sm:px-6 lg:px-8",
+        "mx-auto w-full px-2 sm:px-4 lg:px-6",
         "max-w-screen-xl", // 1280px max width
         className
       )}

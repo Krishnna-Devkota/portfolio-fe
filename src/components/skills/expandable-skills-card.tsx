@@ -62,13 +62,13 @@ export default function ExpandableSkillsCard() {
             <motion.div
               layoutId={`card-${active.id}-${id}`}
               ref={ref}
-              className="w-full max-w-md rounded-3xl bg-white dark:bg-neutral-900 overflow-hidden"
+              className="w-full max-w-[90%] sm:max-w-md rounded-3xl bg-white dark:bg-neutral-900 overflow-hidden"
             >
-              <motion.img
+               <motion.img
                 layoutId={`image-${active.id}-${id}`}
                 src={active.src}
                 alt={active.title}
-                className="w-full h-64 object-cover"
+                className="w-full h-48 sm:h-64 object-cover"
               />
 
               <div className="p-5">
@@ -91,7 +91,7 @@ export default function ExpandableSkillsCard() {
       </AnimatePresence>
 
       {/* Cards Grid */}
-      <ul className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <ul className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card) => (
           <motion.li
             key={card.id}

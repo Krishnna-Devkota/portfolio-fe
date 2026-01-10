@@ -91,7 +91,7 @@ export default function ExpandableSkillsCard() {
       </AnimatePresence>
 
       {/* Cards Grid */}
-      <ul className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2">
+      <ul className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2">
         {cards.map((card) => (
           <motion.li
             key={card.id}

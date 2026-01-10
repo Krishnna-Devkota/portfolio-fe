@@ -46,7 +46,7 @@ export default function ContactForm() {
             placeholder="Your Name"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full rounded-lg border border-border bg-transparent p-3 focus:outline-none focus:ring-2 focus:ring-primary transition placeholder-gray-400"
+            className="w-full rounded-lg border border-border bg-transparent p-3 focus:outline-none focus:ring-2 focus:ring-primary transition placeholder-gray-400 text-white"
           />
           <input
             required
@@ -54,14 +54,14 @@ export default function ContactForm() {
             placeholder="Your Email"
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full rounded-lg border border-border bg-transparent p-3 focus:outline-none focus:ring-2 focus:ring-primary transition placeholder-gray-400"
+            className="w-full rounded-lg border border-border bg-transparent p-3 focus:outline-none focus:ring-2 focus:ring-primary transition placeholder-gray-400 text-white"
           />
           <textarea
             required
             placeholder="Your Message"
             value={form.message}
             onChange={(e) => setForm({ ...form, message: e.target.value })}
-            className="w-full rounded-lg border border-border bg-transparent p-3 min-h-[120px] focus:outline-none focus:ring-2 focus:ring-primary transition placeholder-gray-400"
+            className="w-full rounded-lg border border-border bg-transparent p-3 min-h-[120px] focus:outline-none focus:ring-2 focus:ring-primary transition placeholder-gray-400 text-white"
           />
           <Button
             borderRadius="0rem" 

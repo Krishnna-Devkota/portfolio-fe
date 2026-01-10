@@ -11,8 +11,8 @@ import Link from "next/link";
 
 export default function AboutMe() {
     return (
-        <div className="items-center px-2 sm:px-4 md:px-8 py-6">
-            <Container className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center">
+        <div className="items-center px-2 sm:px-4 md:px-0 py-6 md:py-0 ">
+            <Container className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 items-center">
                 <BackgroundBeamsWithCollision>
                     <div className="font-bold text-white text-start px-2 sm:px-4 md:px-0">
                         <p className="text-2xl sm:text-3xl md:text-4xl">Hi! I&apos;m </p>
@@ -35,10 +35,12 @@ export default function AboutMe() {
                                     borderRadius="1rem"
                                     className="w-full sm:w-auto cursor-pointer"
                                 >
-                                    <span>Download CV</span>
+                                    <span className="text-yellow-500 font-bold drop-shadow-[0_0_8px_rgba(234,179,8,0.8)] hover:scale-105 transition-transform duration-300 inline-block">
+                                        Download CV
+                                    </span>
                                 </Button>
                             </a>
-                        </section>
+                        </section>  
                     </div>
                 </BackgroundBeamsWithCollision>
                 <div className="w-full flex justify-center items-center py-8 md:py-0">

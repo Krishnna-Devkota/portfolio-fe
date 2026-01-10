@@ -66,7 +66,7 @@ export default function Contact() {
 
                     <div className="pt-6 border-t border-gray-700">
                         <p className="text-gray-400 text-sm">
-                            ✨ Response time: Usually within 24 hours
+                            ✨ Response time: Usually within 24 hours in Linkedin
                         </p>
                     </div>
                 </section>

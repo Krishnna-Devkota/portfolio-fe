@@ -6,7 +6,7 @@ import { WobbleCard } from "../ui/wobble-card";
 
 export function WobbleCardDemo() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto w-full px-4 sm:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  w-full px-4 sm:px-8">
       <Link
         href="https://pomodoro-yb8i.vercel.app/"
         target="_blank"

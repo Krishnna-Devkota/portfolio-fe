@@ -4,6 +4,7 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { skills } from "@/data/skills";
+import Container from "../layout/container";
 
 /* ================== TYPES ================== */
 
@@ -91,30 +92,32 @@ export default function ExpandableSkillsCard() {
       </AnimatePresence>
 
       {/* Cards Grid */}
-      <ul className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2">
-        {cards.map((card) => (
-          <motion.li
-            key={card.id}
-            layoutId={`card-${card.id}-${id}`}
-            onClick={() => setActive(card)}
-            className="cursor-pointer rounded-xl p-4 hover:bg-neutral-100 dark:hover:bg-neutral-800"
-          >
-            <motion.img
-              layoutId={`image-${card.id}-${id}`}
-              src={card.src}
-              alt={card.title}
-              className="h-40 w-full rounded-lg object-cover"
-            />
-
-            <motion.h3
-              layoutId={`title-${card.id}-${id}`}
-              className="mt-3 text-center font-medium text-gray-500"
+      
+        <ul className="grid grid-cols-2 md:grid-cols-4 ">
+          {cards.map((card) => (
+            <motion.li
+              key={card.id}
+              layoutId={`card-${card.id}-${id}`}
+              onClick={() => setActive(card)}
+              className="cursor-pointer rounded-xl p-4 hover:bg-neutral-100 dark:hover:bg-neutral-800"
             >
-              {card.title}
-            </motion.h3>
-          </motion.li>
-        ))}
-      </ul>
+              <motion.img
+                layoutId={`image-${card.id}-${id}`}
+                src={card.src}
+                alt={card.title}
+                className="h-40 w-full rounded-lg object-cover"
+              />
+
+              <motion.h3
+                layoutId={`title-${card.id}-${id}`}
+                className="mt-3 text-center font-medium text-gray-500"
+              >
+                {card.title}
+              </motion.h3>
+            </motion.li>
+          ))}
+        </ul>
+      
     </>
   );
 }

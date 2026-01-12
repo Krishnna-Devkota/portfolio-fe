@@ -22,7 +22,7 @@ export const metadata = {
   },
   openGraph: {
       title: "Krishna Devkota | Frontend Developer",
-      description: "Frontend Developer in Nepal",
+      description: "Frontend Developer specializing in React, Next.js, and modern web technologies. Crafting engaging and user-friendly web experiences.",
       url: "https://krishdeeves.com",
       images: [
         {

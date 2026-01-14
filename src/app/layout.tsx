@@ -26,7 +26,7 @@ export const metadata = {
       url: "https://krishdeeves.com",
       images: [
         {
-          url: "/me.jpg",
+          url: "/me.png",
           width: 1200,
           height: 630,
           alt: "Krishna Devkota | Frontend Developer",

@@ -29,7 +29,7 @@ export const skills = {
     image: "/creative.png",
     items: [
       "Basics of GSAP",
-      "Framer Motion",
+      "Ascernity",
       "shadcn"
     ]
   }

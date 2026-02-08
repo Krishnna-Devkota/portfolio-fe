@@ -1,7 +1,7 @@
 export const skills = {
   frontend: {
     label: "Frontend",
-    image: "/frontend.png", 
+    // image: "/frontend.png", 
     items: [
       "Next.js",
       "React",
@@ -10,7 +10,7 @@ export const skills = {
   },
   uiux: {
     label: "UI / UX Design",
-    image: "/uiux.png",
+    // image: "/uiux.png",
     items: [
       "Figma",
       "Responsive Design"
@@ -18,7 +18,7 @@ export const skills = {
   },
   toolsAndTechnologies: {
     label: "Tools and Technologies",
-    image: "/tools.png",
+    // image: "/tools.png",
     items: [
       "VS Code",
       "Vercel"
@@ -26,7 +26,7 @@ export const skills = {
   },
   creative: {
     label: "Creative Skill",
-    image: "/creative.png",
+    // image: "/creative.png",
     items: [
       "Basics of GSAP",
       "Ascernity",

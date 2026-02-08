@@ -26,8 +26,8 @@ export default function AboutMe() {
                                 <span>LinkedIn</span>
                             </Button>
                             <a
-                                href="/CV.pdf"
-                                download="CV.pdf"
+                                href="/KrishnnaDevkota_FrontendDeveloper_CV.pdf"
+                                download="KrishnnaDevkota_FrontendDeveloper_CV.pdf"
                                 className="w-full sm:w-auto"
                             >
                                 <Button

@@ -77,7 +77,7 @@ export function WobbleCardDemo() {
                 Education Consultancy
               </h2>
               <p className="mt-4 max-w-[26rem] text-left text-base text-neutral-200">
-                A modern consultancy platform built with Next.js, Sanity CMS, and TanStack for scalable, high-performance experiences.
+                A modern consultancy platform built with Next.js, Sanity CMS.
               </p>
             </div>
           </WobbleCard>
